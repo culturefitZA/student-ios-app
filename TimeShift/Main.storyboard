@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,18 +30,28 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELEBOGILE HIGH SCHOOL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81f-wV-aKq">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                                                 <color key="textColor" red="0.90186256170000001" green="0.90201735500000002" blue="0.9018527865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perseverence is the mother of success" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQU-Ai-uXc">
+                                                <rect key="frame" x="0.0" y="50" width="375" height="18"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
+                                                <color key="textColor" red="0.93675750489999998" green="0.933388412" blue="0.93316197400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="81f-wV-aKq" firstAttribute="width" secondItem="hUs-wz-jlY" secondAttribute="width" multiplier="100%" id="0hs-na-Eio"/>
+                                            <constraint firstAttribute="trailing" secondItem="oQU-Ai-uXc" secondAttribute="trailing" id="Dy5-YJ-loK"/>
                                             <constraint firstItem="81f-wV-aKq" firstAttribute="top" secondItem="hUs-wz-jlY" secondAttribute="top" id="FEv-r5-qTs"/>
+                                            <constraint firstItem="oQU-Ai-uXc" firstAttribute="top" secondItem="81f-wV-aKq" secondAttribute="bottom" id="LJ9-Pu-eIO"/>
                                             <constraint firstItem="81f-wV-aKq" firstAttribute="leading" secondItem="hUs-wz-jlY" secondAttribute="leading" id="Ymc-aX-WJ1"/>
+                                            <constraint firstItem="oQU-Ai-uXc" firstAttribute="leading" secondItem="hUs-wz-jlY" secondAttribute="leading" id="ZO3-DI-ses"/>
                                             <constraint firstAttribute="trailing" secondItem="81f-wV-aKq" secondAttribute="trailing" id="doP-Yb-pfA"/>
                                             <constraint firstItem="81f-wV-aKq" firstAttribute="height" secondItem="hUs-wz-jlY" secondAttribute="height" multiplier="50%" id="mKL-A9-dCG"/>
+                                            <constraint firstItem="oQU-Ai-uXc" firstAttribute="width" secondItem="hUs-wz-jlY" secondAttribute="width" multiplier="100%" id="mYE-Yw-lz8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -61,7 +71,7 @@
                                         <rect key="frame" x="0.0" y="149.5" width="375" height="50.5"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sqp-pD-mLg" customClass="IBTextField" customModule="TimeShift" customModuleProvider="target">
-                                                <rect key="frame" x="19.5" y="0.0" width="337.5" height="50.5"/>
+                                                <rect key="frame" x="37.5" y="0.0" width="300" height="50.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -77,7 +87,7 @@
                                         <constraints>
                                             <constraint firstItem="sqp-pD-mLg" firstAttribute="top" secondItem="snr-Cf-IHe" secondAttribute="top" id="4FT-py-AL2"/>
                                             <constraint firstItem="sqp-pD-mLg" firstAttribute="centerX" secondItem="snr-Cf-IHe" secondAttribute="centerX" id="Jo2-ol-4c5"/>
-                                            <constraint firstItem="sqp-pD-mLg" firstAttribute="width" secondItem="snr-Cf-IHe" secondAttribute="width" multiplier="90%" id="XnH-nx-1CT"/>
+                                            <constraint firstItem="sqp-pD-mLg" firstAttribute="width" secondItem="snr-Cf-IHe" secondAttribute="width" multiplier="80%" id="XnH-nx-1CT"/>
                                             <constraint firstItem="sqp-pD-mLg" firstAttribute="height" secondItem="snr-Cf-IHe" secondAttribute="height" multiplier="100%" id="ZrY-zM-mbU"/>
                                             <constraint firstAttribute="bottom" secondItem="sqp-pD-mLg" secondAttribute="bottom" id="nsp-xj-HqI"/>
                                             <constraint firstItem="sqp-pD-mLg" firstAttribute="centerY" secondItem="snr-Cf-IHe" secondAttribute="centerY" id="q2L-88-GsN"/>
@@ -87,7 +97,7 @@
                                         <rect key="frame" x="0.0" y="85.5" width="375" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDd-gb-2i8" customClass="IBTextField" customModule="TimeShift" customModuleProvider="target">
-                                                <rect key="frame" x="19.5" y="0.0" width="337.5" height="50"/>
+                                                <rect key="frame" x="37.5" y="0.0" width="300" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -107,7 +117,7 @@
                                             <constraint firstItem="mDd-gb-2i8" firstAttribute="centerX" secondItem="5nC-el-z2j" secondAttribute="centerX" id="1Z0-wX-yk8"/>
                                             <constraint firstItem="mDd-gb-2i8" firstAttribute="top" secondItem="5nC-el-z2j" secondAttribute="top" id="C73-kL-JEs"/>
                                             <constraint firstItem="mDd-gb-2i8" firstAttribute="height" secondItem="5nC-el-z2j" secondAttribute="height" multiplier="100%" id="Itg-6I-OAz"/>
-                                            <constraint firstItem="mDd-gb-2i8" firstAttribute="width" secondItem="5nC-el-z2j" secondAttribute="width" multiplier="90%" id="eNV-W4-VSL"/>
+                                            <constraint firstItem="mDd-gb-2i8" firstAttribute="width" secondItem="5nC-el-z2j" secondAttribute="width" multiplier="80%" id="eNV-W4-VSL"/>
                                             <constraint firstAttribute="bottom" secondItem="mDd-gb-2i8" secondAttribute="bottom" id="kh2-Go-y8k"/>
                                             <constraint firstItem="mDd-gb-2i8" firstAttribute="centerY" secondItem="5nC-el-z2j" secondAttribute="centerY" id="xRd-5V-eG3"/>
                                         </constraints>
@@ -163,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="91" width="375" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce4-9J-M6B" customClass="IBButton" customModule="TimeShift" customModuleProvider="target">
-                                                <rect key="frame" x="19.5" y="0.0" width="337.5" height="50"/>
+                                                <rect key="frame" x="37.5" y="0.0" width="300" height="50"/>
                                                 <color key="backgroundColor" red="0.10753720253705978" green="0.36614951491355896" blue="0.31762281060218811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" red="0.90186256170000001" green="0.90201735500000002" blue="0.9018527865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -183,7 +193,7 @@
                                             <constraint firstItem="Ce4-9J-M6B" firstAttribute="height" secondItem="uMv-nq-rJp" secondAttribute="height" multiplier="100%" id="9R7-Ju-6e2"/>
                                             <constraint firstItem="Ce4-9J-M6B" firstAttribute="centerY" secondItem="uMv-nq-rJp" secondAttribute="centerY" id="Ixt-v4-enH"/>
                                             <constraint firstItem="Ce4-9J-M6B" firstAttribute="top" secondItem="uMv-nq-rJp" secondAttribute="top" id="b4R-qq-7fS"/>
-                                            <constraint firstItem="Ce4-9J-M6B" firstAttribute="width" secondItem="uMv-nq-rJp" secondAttribute="width" multiplier="90%" id="gKn-qr-a02"/>
+                                            <constraint firstItem="Ce4-9J-M6B" firstAttribute="width" secondItem="uMv-nq-rJp" secondAttribute="width" multiplier="80%" id="gKn-qr-a02"/>
                                             <constraint firstItem="Ce4-9J-M6B" firstAttribute="centerX" secondItem="uMv-nq-rJp" secondAttribute="centerX" id="sh7-s8-Hki"/>
                                             <constraint firstAttribute="bottom" secondItem="Ce4-9J-M6B" secondAttribute="bottom" id="uUG-hQ-EUY"/>
                                         </constraints>

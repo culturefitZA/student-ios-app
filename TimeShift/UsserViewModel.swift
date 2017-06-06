@@ -27,5 +27,4 @@ class UsserViewModel {
     init (usser: Usser) {
        self.usser = usser
     }
-    
 }

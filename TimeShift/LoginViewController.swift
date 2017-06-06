@@ -4,7 +4,6 @@
 //
 //  Created by Vision Mkhabela on 4/19/17.
 //  Copyright © 2017 Bitwaregon. All rights reserved.
-//
 
 import Foundation
 import UIKit
@@ -24,7 +23,14 @@ class LoginViewController: UIViewController,LibraryAPIDelegate{
      checkIFLoginSucceeded(loginStatus:viewModel.loginStatusText!,
                            viewModel:viewModel)
     }
-    
+	
+	  func didRecieveError(sender:LibraryAPI,errorModel:UserErrorViewModel){
+			if(errorModel.tag == LoginConstants.failure){
+				LoadingIndicator.sharedInstance.stopLoadingIndicator(parentView:self.view)
+				self.performSegue(withIdentifier:LoginConstants.timeTableSegue, sender: self)
+			}
+	  }
+	
     func checkIFLoginSucceeded(loginStatus:String,viewModel : UsserViewModel){
         if (loginStatus == LoginConstants.success) {
          loginViewModel = viewModel
@@ -51,9 +57,7 @@ class LoginViewController: UIViewController,LibraryAPIDelegate{
     
     @IBAction func forgotPasswordAction(_ sender: Any) {
     }
-    
 }
-
 
 extension LoginViewController {
     

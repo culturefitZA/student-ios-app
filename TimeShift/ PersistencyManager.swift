@@ -11,7 +11,11 @@ import Foundation
 class PersistencyManager : NSObject{
    
     var _userViewModel = UsserViewModel(usser: Usser(userName:"", passWord:"",loginStatus:""))
-    
+    var _userErrorViewModel = UserErrorViewModel(userError: UserError(_status: "", _errorMessage:"", _tag: ""))
+	
+		func getUserError() -> UserErrorViewModel {
+			return _userErrorViewModel
+	  }
     func getUserAuthDetails() -> UsserViewModel  {
         return _userViewModel
     }

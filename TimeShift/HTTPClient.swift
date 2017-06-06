@@ -20,7 +20,8 @@ class HTTPClient : NSObject{
         request.httpMethod = "GET"
         var userDictionary = [String: AnyObject]()
         var viewModel = UsserViewModel(usser:Usser(userName:"", passWord: "", loginStatus: ""))
-        
+			  var _userErrorViewModel = UserErrorViewModel(userError: UserError(_status: "", _errorMessage:"", _tag: ""))
+
         DispatchQueue.main.async {
         let task = URLSession.shared.dataTask(with: URL(string:url!)!) { data, response, error in
            
@@ -32,7 +33,6 @@ class HTTPClient : NSObject{
                 print("Data is empty")
                 return
             }
-            
             do {
                 userDictionary = try JSONSerialization.jsonObject(with: data) as! [String: AnyObject]
                 print(userDictionary)
@@ -41,17 +41,16 @@ class HTTPClient : NSObject{
                  viewModel =  UsserViewModel(usser: Usser(userName: (userDictionary["usrname"] as? String)!, passWord: (userDictionary["password"] as? String)!,loginStatus: (userDictionary["response"] as? String)!))
                     LibraryAPI.sharedInstance.setUserViewModel(userViewModel:viewModel)
                     
-                }else{
-                
+                }else if (userDictionary["tag"] as? String == "failure"){
+                  _userErrorViewModel = UserErrorViewModel(userError: UserError(_status:"0", _errorMessage:(userDictionary["error_msg"] as? String)!, _tag: (userDictionary["tag"] as? String)!))
+									  LibraryAPI.sharedInstance.setErrorViewModel(errorViewmodel: _userErrorViewModel)
                 }
        
             } catch {
                 print("json error: \(error.localizedDescription)")
             }
-            //)
         }
         task.resume()
         }
-        
     }
 }

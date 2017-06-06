@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4093077D1EE70EC50013F5B5 /* UserErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093077C1EE70EC50013F5B5 /* UserErrorViewModel.swift */; };
+		4093077F1EE70F300013F5B5 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093077E1EE70F300013F5B5 /* UserError.swift */; };
+		409307821EE712910013F5B5 /* LibraryAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307811EE712910013F5B5 /* LibraryAPIDelegate.swift */; };
 		40B3C5C61EAB901800B7BB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C5C51EAB901800B7BB36 /* AppDelegate.swift */; };
 		40B3C5CD1EAB901800B7BB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C5CC1EAB901800B7BB36 /* Assets.xcassets */; };
 		40B3C5D01EAB901800B7BB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C5CE1EAB901800B7BB36 /* LaunchScreen.storyboard */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4093077C1EE70EC50013F5B5 /* UserErrorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserErrorViewModel.swift; sourceTree = "<group>"; };
+		4093077E1EE70F300013F5B5 /* UserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		409307811EE712910013F5B5 /* LibraryAPIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPIDelegate.swift; sourceTree = "<group>"; };
 		40B3C5C21EAB901800B7BB36 /* TimeShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B3C5C51EAB901800B7BB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B3C5CC1EAB901800B7BB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		409307801EE7126B0013F5B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				409307811EE712910013F5B5 /* LibraryAPIDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		40B3C5B91EAB901800B7BB36 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +133,7 @@
 		40B3C5C41EAB901800B7BB36 /* TimeShift */ = {
 			isa = PBXGroup;
 			children = (
+				409307801EE7126B0013F5B5 /* Protocols */,
 				40B3C6191EACB62100B7BB36 /* UIkit */,
 				40B3C6131EACAA7400B7BB36 /* Constants */,
 				40B3C5F81EAB907100B7BB36 /* Designables */,
@@ -176,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				40B3C6051EAB90CD00B7BB36 /* Usser.swift */,
+				4093077E1EE70F300013F5B5 /* UserError.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -184,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				40B3C6031EAB90C600B7BB36 /* UsserViewModel.swift */,
+				4093077C1EE70EC50013F5B5 /* UserErrorViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -377,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B3C61B1EACB97F00B7BB36 /* LoadingIndicator.swift in Sources */,
+				4093077D1EE70EC50013F5B5 /* UserErrorViewModel.swift in Sources */,
 				40B3C60C1EAB993D00B7BB36 /*  PersistencyManager.swift in Sources */,
 				40B3C6061EAB90CD00B7BB36 /* Usser.swift in Sources */,
 				40B3C6121EACA31D00B7BB36 /* LoginViewControllerIBOutlets.swift in Sources */,
@@ -384,6 +402,8 @@
 				40B3C5FF1EAB90A200B7BB36 /* IBButton.swift in Sources */,
 				40B3C6001EAB90A200B7BB36 /* IBTextField.swift in Sources */,
 				40B3C60E1EAB9B1D00B7BB36 /* HTTPClient.swift in Sources */,
+				409307821EE712910013F5B5 /* LibraryAPIDelegate.swift in Sources */,
+				4093077F1EE70F300013F5B5 /* UserError.swift in Sources */,
 				40B3C5C61EAB901800B7BB36 /* AppDelegate.swift in Sources */,
 				40B3C6161EACAAA600B7BB36 /* LoginConstants.swift in Sources */,
 				40B3C6041EAB90C600B7BB36 /* UsserViewModel.swift in Sources */,

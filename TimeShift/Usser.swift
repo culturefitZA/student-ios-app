@@ -19,5 +19,4 @@ class Usser {
         self.userName = userName
         self.loginStatus = loginStatus
     }
-    
 }

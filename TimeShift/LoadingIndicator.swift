@@ -34,12 +34,4 @@ class LoadingIndicator {
     func stopLoadingIndicator(parentView:UIView){
      activityIndicator.stopAnimating()
     }
-    
 }
-
-
-
-
-/*
- let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
- */

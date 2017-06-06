@@ -17,5 +17,4 @@ class LoginViewControllerIBOutlets: NSObject {
     @IBOutlet weak var forgotPassword: UIButton!
     @IBOutlet weak var signIn: IBButton!
     @IBOutlet weak var signUp: UIButton!
-    
 }

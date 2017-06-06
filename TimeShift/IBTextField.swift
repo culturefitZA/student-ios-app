@@ -31,8 +31,6 @@ class IBTextField:UITextField, UITextFieldDelegate {
     }
  
     let underlineViewLayer = CALayer()
-  
-    
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -40,11 +38,13 @@ class IBTextField:UITextField, UITextFieldDelegate {
             layer.masksToBounds = cornerRadius > 0
         }
     }
+	
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
+	
     @IBInspectable var underlineColorWidth: UIColor? {
         didSet {
             underlineViewLayer.borderColor = underlineColorWidth?.cgColor
@@ -63,8 +63,7 @@ class IBTextField:UITextField, UITextFieldDelegate {
         _isIPadTextfield = isIPadTextField
         }
     }
-    
-    
+	
     func animateTitleLabel(){
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity:0.1, options: .curveEaseInOut, animations: {
             self.textNameLabel.frame = CGRect(x: 0, y: -3, width: self.bounds.size.width, height: 20)
@@ -118,8 +117,6 @@ class IBTextField:UITextField, UITextFieldDelegate {
             self.lineView.backgroundColor = self.textColor;
             self.addSubview(self.lineView)
 
-        }
-    
+        }    
     }
-    
  }

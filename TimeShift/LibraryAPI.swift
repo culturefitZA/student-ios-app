@@ -38,13 +38,15 @@ class LibraryAPI {
         persistencyManager._userViewModel = userViewModel
         httpDelegate?.didSetUser(sender: self,viewModel:userViewModel)
     }
-    
+	
+	  func setErrorViewModel(errorViewmodel:UserErrorViewModel){
+	      persistencyManager._userErrorViewModel = errorViewmodel
+			  httpDelegate?.didRecieveError(sender: self, errorModel: errorViewmodel)
+	  }
+	
     func getUserAuth() -> UsserViewModel {
        return persistencyManager.getUserAuthDetails()
     }
 }
 
-protocol LibraryAPIDelegate: class {
-    func didSetUser(sender: LibraryAPI,viewModel : UsserViewModel)
-}
 

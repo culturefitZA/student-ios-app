@@ -37,7 +37,6 @@ class IBButton: UIButton {
         didSet {
             layer.shadowRadius = shadowRadius
         }
-    
     }
     
     @IBInspectable var shadowColor: UIColor?{
@@ -45,14 +44,12 @@ class IBButton: UIButton {
             layer.shadowColor = shadowColor?.cgColor
             layer.masksToBounds = false;
         }
-  
     }
     
     @IBInspectable var borderColor: UIColor?{
         didSet {
             layer.shadowColor = borderColor?.cgColor
         }
-        
     }
     
     @IBInspectable var shadowOffset: CGSize?{
@@ -65,9 +62,5 @@ class IBButton: UIButton {
     override func draw(_ rect: CGRect) {
       
         self.layer.shadowOffset = CGSize(width:0,height:1);
-        
-
     }
-
-    
 }
