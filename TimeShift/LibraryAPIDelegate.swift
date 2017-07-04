@@ -7,7 +7,7 @@
 //
 
 import Foundation
+
 protocol LibraryAPIDelegate: class {
-	func didSetUser(sender: LibraryAPI,viewModel : UsserViewModel)
-	func didRecieveError(sender:LibraryAPI,errorModel:UserErrorViewModel)
+	func didAuthenticateLearner(isAuthentic:Bool)
 }

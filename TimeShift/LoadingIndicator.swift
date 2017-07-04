@@ -33,5 +33,6 @@ class LoadingIndicator {
     
     func stopLoadingIndicator(parentView:UIView){
      activityIndicator.stopAnimating()
+		 parentView.alpha = 1
     }
 }

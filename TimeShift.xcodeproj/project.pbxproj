@@ -10,6 +10,20 @@
 		4093077D1EE70EC50013F5B5 /* UserErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093077C1EE70EC50013F5B5 /* UserErrorViewModel.swift */; };
 		4093077F1EE70F300013F5B5 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093077E1EE70F300013F5B5 /* UserError.swift */; };
 		409307821EE712910013F5B5 /* LibraryAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307811EE712910013F5B5 /* LibraryAPIDelegate.swift */; };
+		409307841EE768D30013F5B5 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 409307831EE768D30013F5B5 /* GoogleService-Info-2.plist */; };
+		409307901EEB47980013F5B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4093078F1EEB47980013F5B5 /* GoogleService-Info.plist */; };
+		409307A21EEC42780013F5B5 /* LearnerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4093079F1EEC42780013F5B5 /* LearnerBase.m */; };
+		409307A31EEC42780013F5B5 /* Learner.m in Sources */ = {isa = PBXBuildFile; fileRef = 409307A11EEC42780013F5B5 /* Learner.m */; };
+		409307A51EEC54800013F5B5 /* LearnerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307A41EEC54800013F5B5 /* LearnerViewModel.swift */; };
+		409307AA1EEC7C300013F5B5 /* CredentialsBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 409307A71EEC7C300013F5B5 /* CredentialsBase.m */; };
+		409307AB1EEC7C300013F5B5 /* LearnerCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 409307A91EEC7C300013F5B5 /* LearnerCredentials.m */; };
+		409307AF1EED2DC80013F5B5 /* TimeTablePagingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409307AE1EED2DC80013F5B5 /* TimeTablePagingController.storyboard */; };
+		409307B11EED2E5E0013F5B5 /* TimeTablePagingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307B01EED2E5E0013F5B5 /* TimeTablePagingContainerViewController.swift */; };
+		409307B51EED3E510013F5B5 /* TimeTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409307B41EED3E510013F5B5 /* TimeTableViewController.storyboard */; };
+		409307B71EED42CC0013F5B5 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307B61EED42CC0013F5B5 /* TimeTableViewController.swift */; };
+		409307D51EED544D0013F5B5 /* TimeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307D41EED544D0013F5B5 /* TimeTableViewModel.swift */; };
+		409307D71EED58870013F5B5 /* TimeTableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409307D61EED58870013F5B5 /* TimeTableConstants.swift */; };
+		409308031EEF1A0A0013F5B5 /* TimeTablePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409308021EEF1A0A0013F5B5 /* TimeTablePagingViewController.swift */; };
 		40B3C5C61EAB901800B7BB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C5C51EAB901800B7BB36 /* AppDelegate.swift */; };
 		40B3C5CD1EAB901800B7BB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C5CC1EAB901800B7BB36 /* Assets.xcassets */; };
 		40B3C5D01EAB901800B7BB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C5CE1EAB901800B7BB36 /* LaunchScreen.storyboard */; };
@@ -18,16 +32,34 @@
 		40B3C5FF1EAB90A200B7BB36 /* IBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C5FD1EAB90A200B7BB36 /* IBButton.swift */; };
 		40B3C6001EAB90A200B7BB36 /* IBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C5FE1EAB90A200B7BB36 /* IBTextField.swift */; };
 		40B3C6021EAB90AE00B7BB36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C6011EAB90AE00B7BB36 /* LoginViewController.swift */; };
-		40B3C6041EAB90C600B7BB36 /* UsserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C6031EAB90C600B7BB36 /* UsserViewModel.swift */; };
-		40B3C6061EAB90CD00B7BB36 /* Usser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C6051EAB90CD00B7BB36 /* Usser.swift */; };
 		40B3C6081EAB90F100B7BB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C6071EAB90F100B7BB36 /* Main.storyboard */; };
 		40B3C60A1EAB98B200B7BB36 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C6091EAB98B200B7BB36 /* LibraryAPI.swift */; };
 		40B3C60C1EAB993D00B7BB36 /*  PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C60B1EAB993D00B7BB36 /*  PersistencyManager.swift */; };
-		40B3C60E1EAB9B1D00B7BB36 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C60D1EAB9B1D00B7BB36 /* HTTPClient.swift */; };
 		40B3C6121EACA31D00B7BB36 /* LoginViewControllerIBOutlets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C6111EACA31D00B7BB36 /* LoginViewControllerIBOutlets.swift */; };
 		40B3C6161EACAAA600B7BB36 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C6151EACAAA600B7BB36 /* LoginConstants.swift */; };
-		40B3C6181EACADAA00B7BB36 /* TimeTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C6171EACADAA00B7BB36 /* TimeTable.storyboard */; };
-		40B3C61B1EACB97F00B7BB36 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3C61A1EACB97F00B7BB36 /* LoadingIndicator.swift */; };
+		40B3C6181EACADAA00B7BB36 /* TimeTablePagingContainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B3C6171EACADAA00B7BB36 /* TimeTablePagingContainer.storyboard */; };
+		40B5E45A1EFADEBC0048A8EA /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4591EFADEBC0048A8EA /* LoadingIndicator.swift */; };
+		40B5E4731EFB0E110048A8EA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4721EFB0E110048A8EA /* HTTPClient.swift */; };
+		40B5E4751EFB1F000048A8EA /* TimeTablePagingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4741EFB1F000048A8EA /* TimeTablePagingDelegate.swift */; };
+		40B5E47A1EFC33840048A8EA /* PeriodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B5E4791EFC33840048A8EA /* PeriodCell.xib */; };
+		40B5E47D1EFC39510048A8EA /* PeriodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E47C1EFC39510048A8EA /* PeriodCell.swift */; };
+		40B5E47F1EFC4D470048A8EA /* PeriodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E47E1EFC4D470048A8EA /* PeriodViewModel.swift */; };
+		40B5E49D1EFC60580048A8EA /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4901EFC60580048A8EA /* Classes.m */; };
+		40B5E49E1EFC60580048A8EA /* Friday.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4921EFC60580048A8EA /* Friday.m */; };
+		40B5E49F1EFC60580048A8EA /* Monday.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4941EFC60580048A8EA /* Monday.m */; };
+		40B5E4A01EFC60580048A8EA /* PeriodBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4961EFC60580048A8EA /* PeriodBase.m */; };
+		40B5E4A11EFC60580048A8EA /* Thursday.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4981EFC60580048A8EA /* Thursday.m */; };
+		40B5E4A21EFC60580048A8EA /* Tuesday.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E49A1EFC60580048A8EA /* Tuesday.m */; };
+		40B5E4A31EFC60580048A8EA /* Wednesday.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E49C1EFC60580048A8EA /* Wednesday.m */; };
+		40B5E4A71EFC70CE0048A8EA /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4A61EFC70CE0048A8EA /* DateHelper.swift */; };
+		40B5E4EC1F0529960048A8EA /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B5E4EB1F0529960048A8EA /* RootViewController.storyboard */; };
+		40B5E4EE1F0549350048A8EA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4ED1F0549350048A8EA /* RootViewController.swift */; };
+		40B5E4F01F0585490048A8EA /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4EF1F0585490048A8EA /* BaseNavigationViewController.swift */; };
+		40B5E4F21F0585960048A8EA /* SlidingMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5E4F11F0585960048A8EA /* SlidingMenuProtocol.swift */; };
+		40B5E4F61F0C32460048A8EA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 40B5E4F51F0C32460048A8EA /* Podfile */; };
+		6B7731853063C6DFC05ACF46 /* Pods_TimeShiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF4CF6EED0A4D7F79550348 /* Pods_TimeShiftTests.framework */; };
+		8394E31D8885D6B2B324D55B /* Pods_TimeShift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BE32F2D38A80266AD6CCE3 /* Pods_TimeShift.framework */; };
+		B5C51E091AF8E25B133BCA0E /* Pods_TimeShiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A671C1C83FB85261E1113D4C /* Pods_TimeShiftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +80,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092F8459C49499EA1C96C4A8 /* Pods-TimeShiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeShiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeShiftTests/Pods-TimeShiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		40277106F1B04C5A6F50F52B /* Pods-TimeShiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeShiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeShiftTests/Pods-TimeShiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4093077C1EE70EC50013F5B5 /* UserErrorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserErrorViewModel.swift; sourceTree = "<group>"; };
 		4093077E1EE70F300013F5B5 /* UserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		409307811EE712910013F5B5 /* LibraryAPIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPIDelegate.swift; sourceTree = "<group>"; };
+		409307831EE768D30013F5B5 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		4093078F1EEB47980013F5B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		409307911EEC05AE0013F5B5 /* TimeShift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeShift-Bridging-Header.h"; sourceTree = "<group>"; };
+		4093079D1EEC42780013F5B5 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		4093079E1EEC42780013F5B5 /* LearnerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnerBase.h; sourceTree = "<group>"; };
+		4093079F1EEC42780013F5B5 /* LearnerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnerBase.m; sourceTree = "<group>"; };
+		409307A01EEC42780013F5B5 /* Learner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Learner.h; sourceTree = "<group>"; };
+		409307A11EEC42780013F5B5 /* Learner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Learner.m; sourceTree = "<group>"; };
+		409307A41EEC54800013F5B5 /* LearnerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnerViewModel.swift; sourceTree = "<group>"; };
+		409307A61EEC7C300013F5B5 /* CredentialsBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialsBase.h; sourceTree = "<group>"; };
+		409307A71EEC7C300013F5B5 /* CredentialsBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialsBase.m; sourceTree = "<group>"; };
+		409307A81EEC7C300013F5B5 /* LearnerCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnerCredentials.h; sourceTree = "<group>"; };
+		409307A91EEC7C300013F5B5 /* LearnerCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnerCredentials.m; sourceTree = "<group>"; };
+		409307AE1EED2DC80013F5B5 /* TimeTablePagingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeTablePagingController.storyboard; sourceTree = "<group>"; };
+		409307B01EED2E5E0013F5B5 /* TimeTablePagingContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTablePagingContainerViewController.swift; sourceTree = "<group>"; };
+		409307B41EED3E510013F5B5 /* TimeTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeTableViewController.storyboard; sourceTree = "<group>"; };
+		409307B61EED42CC0013F5B5 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		409307D41EED544D0013F5B5 /* TimeTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewModel.swift; sourceTree = "<group>"; };
+		409307D61EED58870013F5B5 /* TimeTableConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableConstants.swift; sourceTree = "<group>"; };
+		409308021EEF1A0A0013F5B5 /* TimeTablePagingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTablePagingViewController.swift; sourceTree = "<group>"; };
 		40B3C5C21EAB901800B7BB36 /* TimeShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B3C5C51EAB901800B7BB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B3C5CC1EAB901800B7BB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,16 +119,45 @@
 		40B3C5FD1EAB90A200B7BB36 /* IBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBButton.swift; sourceTree = "<group>"; };
 		40B3C5FE1EAB90A200B7BB36 /* IBTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBTextField.swift; sourceTree = "<group>"; };
 		40B3C6011EAB90AE00B7BB36 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		40B3C6031EAB90C600B7BB36 /* UsserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsserViewModel.swift; sourceTree = "<group>"; };
-		40B3C6051EAB90CD00B7BB36 /* Usser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usser.swift; sourceTree = "<group>"; };
 		40B3C6071EAB90F100B7BB36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		40B3C6091EAB98B200B7BB36 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		40B3C60B1EAB993D00B7BB36 /*  PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " PersistencyManager.swift"; sourceTree = "<group>"; };
-		40B3C60D1EAB9B1D00B7BB36 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		40B3C6111EACA31D00B7BB36 /* LoginViewControllerIBOutlets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerIBOutlets.swift; sourceTree = "<group>"; };
 		40B3C6151EACAAA600B7BB36 /* LoginConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
-		40B3C6171EACADAA00B7BB36 /* TimeTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeTable.storyboard; sourceTree = "<group>"; };
-		40B3C61A1EACB97F00B7BB36 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		40B3C6171EACADAA00B7BB36 /* TimeTablePagingContainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimeTablePagingContainer.storyboard; sourceTree = "<group>"; };
+		40B5E4591EFADEBC0048A8EA /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		40B5E4721EFB0E110048A8EA /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		40B5E4741EFB1F000048A8EA /* TimeTablePagingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTablePagingDelegate.swift; sourceTree = "<group>"; };
+		40B5E4791EFC33840048A8EA /* PeriodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeriodCell.xib; sourceTree = "<group>"; };
+		40B5E47C1EFC39510048A8EA /* PeriodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodCell.swift; sourceTree = "<group>"; };
+		40B5E47E1EFC4D470048A8EA /* PeriodViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodViewModel.swift; sourceTree = "<group>"; };
+		40B5E48F1EFC60580048A8EA /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		40B5E4901EFC60580048A8EA /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+		40B5E4911EFC60580048A8EA /* Friday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friday.h; sourceTree = "<group>"; };
+		40B5E4921EFC60580048A8EA /* Friday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friday.m; sourceTree = "<group>"; };
+		40B5E4931EFC60580048A8EA /* Monday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monday.h; sourceTree = "<group>"; };
+		40B5E4941EFC60580048A8EA /* Monday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monday.m; sourceTree = "<group>"; };
+		40B5E4951EFC60580048A8EA /* PeriodBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeriodBase.h; sourceTree = "<group>"; };
+		40B5E4961EFC60580048A8EA /* PeriodBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriodBase.m; sourceTree = "<group>"; };
+		40B5E4971EFC60580048A8EA /* Thursday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thursday.h; sourceTree = "<group>"; };
+		40B5E4981EFC60580048A8EA /* Thursday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thursday.m; sourceTree = "<group>"; };
+		40B5E4991EFC60580048A8EA /* Tuesday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tuesday.h; sourceTree = "<group>"; };
+		40B5E49A1EFC60580048A8EA /* Tuesday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tuesday.m; sourceTree = "<group>"; };
+		40B5E49B1EFC60580048A8EA /* Wednesday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wednesday.h; sourceTree = "<group>"; };
+		40B5E49C1EFC60580048A8EA /* Wednesday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wednesday.m; sourceTree = "<group>"; };
+		40B5E4A61EFC70CE0048A8EA /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		40B5E4EB1F0529960048A8EA /* RootViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
+		40B5E4ED1F0549350048A8EA /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		40B5E4EF1F0585490048A8EA /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		40B5E4F11F0585960048A8EA /* SlidingMenuProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingMenuProtocol.swift; sourceTree = "<group>"; };
+		40B5E4F51F0C32460048A8EA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		47BE32F2D38A80266AD6CCE3 /* Pods_TimeShift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeShift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BC648AE1B30B390427C934 /* Pods-TimeShiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeShiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeShiftUITests/Pods-TimeShiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8064D85C2DA079B35D94F431 /* Pods-TimeShiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeShiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeShiftUITests/Pods-TimeShiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A671C1C83FB85261E1113D4C /* Pods_TimeShiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeShiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF4CF6EED0A4D7F79550348 /* Pods_TimeShiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeShiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7926EE22C98486369DDF119 /* Pods-TimeShift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeShift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeShift/Pods-TimeShift.debug.xcconfig"; sourceTree = "<group>"; };
+		F94B48F39A31B50AC4ED9DBA /* Pods-TimeShift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeShift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeShift/Pods-TimeShift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8394E31D8885D6B2B324D55B /* Pods_TimeShift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7731853063C6DFC05ACF46 /* Pods_TimeShiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C51E091AF8E25B133BCA0E /* Pods_TimeShiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,17 +192,85 @@
 			isa = PBXGroup;
 			children = (
 				409307811EE712910013F5B5 /* LibraryAPIDelegate.swift */,
+				40B5E4741EFB1F000048A8EA /* TimeTablePagingDelegate.swift */,
+				40B5E4F11F0585960048A8EA /* SlidingMenuProtocol.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		409307B81EED45500013F5B5 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E48F1EFC60580048A8EA /* Classes.h */,
+				40B5E4901EFC60580048A8EA /* Classes.m */,
+				40B5E4911EFC60580048A8EA /* Friday.h */,
+				40B5E4921EFC60580048A8EA /* Friday.m */,
+				40B5E4931EFC60580048A8EA /* Monday.h */,
+				40B5E4941EFC60580048A8EA /* Monday.m */,
+				40B5E4951EFC60580048A8EA /* PeriodBase.h */,
+				40B5E4961EFC60580048A8EA /* PeriodBase.m */,
+				40B5E4971EFC60580048A8EA /* Thursday.h */,
+				40B5E4981EFC60580048A8EA /* Thursday.m */,
+				40B5E4991EFC60580048A8EA /* Tuesday.h */,
+				40B5E49A1EFC60580048A8EA /* Tuesday.m */,
+				40B5E49B1EFC60580048A8EA /* Wednesday.h */,
+				40B5E49C1EFC60580048A8EA /* Wednesday.m */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		409307CE1EED45A20013F5B5 /* credentials */ = {
+			isa = PBXGroup;
+			children = (
+				409307A61EEC7C300013F5B5 /* CredentialsBase.h */,
+				409307A71EEC7C300013F5B5 /* CredentialsBase.m */,
+				409307A81EEC7C300013F5B5 /* LearnerCredentials.h */,
+				409307A91EEC7C300013F5B5 /* LearnerCredentials.m */,
+			);
+			name = credentials;
+			sourceTree = "<group>";
+		};
+		409307CF1EED45C80013F5B5 /* learner */ = {
+			isa = PBXGroup;
+			children = (
+				4093079D1EEC42780013F5B5 /* DataModels.h */,
+				4093079E1EEC42780013F5B5 /* LearnerBase.h */,
+				4093079F1EEC42780013F5B5 /* LearnerBase.m */,
+				409307A01EEC42780013F5B5 /* Learner.h */,
+				409307A11EEC42780013F5B5 /* Learner.m */,
+			);
+			name = learner;
+			sourceTree = "<group>";
+		};
+		409307D01EED45E60013F5B5 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				40B3C6011EAB90AE00B7BB36 /* LoginViewController.swift */,
+			);
+			name = LoginScene;
+			sourceTree = "<group>";
+		};
+		409307D11EED46010013F5B5 /* TimeTableScene */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E47B1EFC33D30048A8EA /* custom cells */,
+				409308021EEF1A0A0013F5B5 /* TimeTablePagingViewController.swift */,
+				409307B01EED2E5E0013F5B5 /* TimeTablePagingContainerViewController.swift */,
+				409307B61EED42CC0013F5B5 /* TimeTableViewController.swift */,
+			);
+			name = TimeTableScene;
 			sourceTree = "<group>";
 		};
 		40B3C5B91EAB901800B7BB36 = {
 			isa = PBXGroup;
 			children = (
+				40B5E4F51F0C32460048A8EA /* Podfile */,
 				40B3C5C41EAB901800B7BB36 /* TimeShift */,
 				40B3C5D91EAB901800B7BB36 /* TimeShiftTests */,
 				40B3C5E41EAB901800B7BB36 /* TimeShiftUITests */,
 				40B3C5C31EAB901800B7BB36 /* Products */,
+				8D6B263AE4924B5E42449532 /* Pods */,
+				8DF826BAAD36F630AD6EC0ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,8 +287,11 @@
 		40B3C5C41EAB901800B7BB36 /* TimeShift */ = {
 			isa = PBXGroup;
 			children = (
+				4093078F1EEB47980013F5B5 /* GoogleService-Info.plist */,
+				409307831EE768D30013F5B5 /* GoogleService-Info-2.plist */,
+				40B5E4A51EFC70AC0048A8EA /* Extensions */,
+				40B5E4A41EFC706C0048A8EA /* UIKit */,
 				409307801EE7126B0013F5B5 /* Protocols */,
-				40B3C6191EACB62100B7BB36 /* UIkit */,
 				40B3C6131EACAA7400B7BB36 /* Constants */,
 				40B3C5F81EAB907100B7BB36 /* Designables */,
 				40B3C5F71EAB906100B7BB36 /* ViewControllers */,
@@ -171,9 +328,9 @@
 		40B3C5F31EAB903A00B7BB36 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				40B5E4721EFB0E110048A8EA /* HTTPClient.swift */,
 				40B3C6091EAB98B200B7BB36 /* LibraryAPI.swift */,
 				40B3C60B1EAB993D00B7BB36 /*  PersistencyManager.swift */,
-				40B3C60D1EAB9B1D00B7BB36 /* HTTPClient.swift */,
 			);
 			name = ApiClient;
 			sourceTree = "<group>";
@@ -181,8 +338,9 @@
 		40B3C5F41EAB904900B7BB36 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				40B3C6071EAB90F100B7BB36 /* Main.storyboard */,
-				40B3C6171EACADAA00B7BB36 /* TimeTable.storyboard */,
+				40B5E4EA1F05296D0048A8EA /* SideMenu */,
+				40B5E4771EFC32D50048A8EA /* Main */,
+				40B5E4761EFC32C60048A8EA /* TimeTable */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -190,8 +348,11 @@
 		40B3C5F51EAB905000B7BB36 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				40B3C6051EAB90CD00B7BB36 /* Usser.swift */,
+				409307CF1EED45C80013F5B5 /* learner */,
+				409307CE1EED45A20013F5B5 /* credentials */,
+				409307B81EED45500013F5B5 /* classes */,
 				4093077E1EE70F300013F5B5 /* UserError.swift */,
+				409307911EEC05AE0013F5B5 /* TimeShift-Bridging-Header.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -199,8 +360,10 @@
 		40B3C5F61EAB905600B7BB36 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				40B3C6031EAB90C600B7BB36 /* UsserViewModel.swift */,
 				4093077C1EE70EC50013F5B5 /* UserErrorViewModel.swift */,
+				409307A41EEC54800013F5B5 /* LearnerViewModel.swift */,
+				409307D41EED544D0013F5B5 /* TimeTableViewModel.swift */,
+				40B5E47E1EFC4D470048A8EA /* PeriodViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -208,8 +371,11 @@
 		40B3C5F71EAB906100B7BB36 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				40B5E4F41F0591CF0048A8EA /* SideMenuScene */,
+				40B5E4F31F0591BA0048A8EA /* RootScene */,
+				409307D11EED46010013F5B5 /* TimeTableScene */,
+				409307D01EED45E60013F5B5 /* LoginScene */,
 				40B3C6101EACA2EE00B7BB36 /* IBOutlets */,
-				40B3C6011EAB90AE00B7BB36 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -243,16 +409,107 @@
 			isa = PBXGroup;
 			children = (
 				40B3C6151EACAAA600B7BB36 /* LoginConstants.swift */,
+				409307D61EED58870013F5B5 /* TimeTableConstants.swift */,
 			);
 			name = ViewControllerConstants;
 			sourceTree = "<group>";
 		};
-		40B3C6191EACB62100B7BB36 /* UIkit */ = {
+		40B5E4761EFC32C60048A8EA /* TimeTable */ = {
 			isa = PBXGroup;
 			children = (
-				40B3C61A1EACB97F00B7BB36 /* LoadingIndicator.swift */,
+				40B5E4781EFC32E70048A8EA /* Custom cells */,
+				409307AE1EED2DC80013F5B5 /* TimeTablePagingController.storyboard */,
+				40B3C6171EACADAA00B7BB36 /* TimeTablePagingContainer.storyboard */,
+				409307B41EED3E510013F5B5 /* TimeTableViewController.storyboard */,
 			);
-			name = UIkit;
+			name = TimeTable;
+			sourceTree = "<group>";
+		};
+		40B5E4771EFC32D50048A8EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				40B3C6071EAB90F100B7BB36 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		40B5E4781EFC32E70048A8EA /* Custom cells */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E4791EFC33840048A8EA /* PeriodCell.xib */,
+			);
+			name = "Custom cells";
+			sourceTree = "<group>";
+		};
+		40B5E47B1EFC33D30048A8EA /* custom cells */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E47C1EFC39510048A8EA /* PeriodCell.swift */,
+			);
+			name = "custom cells";
+			sourceTree = "<group>";
+		};
+		40B5E4A41EFC706C0048A8EA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E4591EFADEBC0048A8EA /* LoadingIndicator.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		40B5E4A51EFC70AC0048A8EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E4A61EFC70CE0048A8EA /* DateHelper.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		40B5E4EA1F05296D0048A8EA /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E4EB1F0529960048A8EA /* RootViewController.storyboard */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		40B5E4F31F0591BA0048A8EA /* RootScene */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E4ED1F0549350048A8EA /* RootViewController.swift */,
+			);
+			name = RootScene;
+			sourceTree = "<group>";
+		};
+		40B5E4F41F0591CF0048A8EA /* SideMenuScene */ = {
+			isa = PBXGroup;
+			children = (
+				40B5E4EF1F0585490048A8EA /* BaseNavigationViewController.swift */,
+			);
+			name = SideMenuScene;
+			sourceTree = "<group>";
+		};
+		8D6B263AE4924B5E42449532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7926EE22C98486369DDF119 /* Pods-TimeShift.debug.xcconfig */,
+				F94B48F39A31B50AC4ED9DBA /* Pods-TimeShift.release.xcconfig */,
+				40277106F1B04C5A6F50F52B /* Pods-TimeShiftTests.debug.xcconfig */,
+				092F8459C49499EA1C96C4A8 /* Pods-TimeShiftTests.release.xcconfig */,
+				63BC648AE1B30B390427C934 /* Pods-TimeShiftUITests.debug.xcconfig */,
+				8064D85C2DA079B35D94F431 /* Pods-TimeShiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DF826BAAD36F630AD6EC0ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47BE32F2D38A80266AD6CCE3 /* Pods_TimeShift.framework */,
+				CBF4CF6EED0A4D7F79550348 /* Pods_TimeShiftTests.framework */,
+				A671C1C83FB85261E1113D4C /* Pods_TimeShiftUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +519,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40B3C5EA1EAB901800B7BB36 /* Build configuration list for PBXNativeTarget "TimeShift" */;
 			buildPhases = (
+				EDD509EF8F6D9B914FC1C8F4 /* [CP] Check Pods Manifest.lock */,
 				40B3C5BE1EAB901800B7BB36 /* Sources */,
 				40B3C5BF1EAB901800B7BB36 /* Frameworks */,
 				40B3C5C01EAB901800B7BB36 /* Resources */,
+				4B433AA02D9260228F777285 /* [CP] Embed Pods Frameworks */,
+				FAB7A314FDE9B34FE19D431B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,9 +539,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40B3C5ED1EAB901800B7BB36 /* Build configuration list for PBXNativeTarget "TimeShiftTests" */;
 			buildPhases = (
+				30DB457889455ECE47932BA7 /* [CP] Check Pods Manifest.lock */,
 				40B3C5D21EAB901800B7BB36 /* Sources */,
 				40B3C5D31EAB901800B7BB36 /* Frameworks */,
 				40B3C5D41EAB901800B7BB36 /* Resources */,
+				12FC44106B91F9AA2602365E /* [CP] Embed Pods Frameworks */,
+				01529D602196176DF2A057F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,9 +560,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40B3C5F01EAB901800B7BB36 /* Build configuration list for PBXNativeTarget "TimeShiftUITests" */;
 			buildPhases = (
+				CC71D92608F63A83DB67B8D3 /* [CP] Check Pods Manifest.lock */,
 				40B3C5DD1EAB901800B7BB36 /* Sources */,
 				40B3C5DE1EAB901800B7BB36 /* Frameworks */,
 				40B3C5DF1EAB901800B7BB36 /* Resources */,
+				28CD70B6AC358D5410CC3F2D /* [CP] Embed Pods Frameworks */,
+				9BCC18A64374EB876C97E290 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +590,7 @@
 					40B3C5C11EAB901800B7BB36 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 6WPV7PB3X4;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					40B3C5D51EAB901800B7BB36 = {
@@ -365,9 +632,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B5E47A1EFC33840048A8EA /* PeriodCell.xib in Resources */,
+				409307841EE768D30013F5B5 /* GoogleService-Info-2.plist in Resources */,
+				409307901EEB47980013F5B5 /* GoogleService-Info.plist in Resources */,
+				40B5E4EC1F0529960048A8EA /* RootViewController.storyboard in Resources */,
+				409307AF1EED2DC80013F5B5 /* TimeTablePagingController.storyboard in Resources */,
 				40B3C6081EAB90F100B7BB36 /* Main.storyboard in Resources */,
+				40B5E4F61F0C32460048A8EA /* Podfile in Resources */,
 				40B3C5D01EAB901800B7BB36 /* LaunchScreen.storyboard in Resources */,
-				40B3C6181EACADAA00B7BB36 /* TimeTable.storyboard in Resources */,
+				40B3C6181EACADAA00B7BB36 /* TimeTablePagingContainer.storyboard in Resources */,
+				409307B51EED3E510013F5B5 /* TimeTableViewController.storyboard in Resources */,
 				40B3C5CD1EAB901800B7BB36 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,25 +662,185 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01529D602196176DF2A057F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeShiftTests/Pods-TimeShiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12FC44106B91F9AA2602365E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeShiftTests/Pods-TimeShiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28CD70B6AC358D5410CC3F2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeShiftUITests/Pods-TimeShiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30DB457889455ECE47932BA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B433AA02D9260228F777285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeShift/Pods-TimeShift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCC18A64374EB876C97E290 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeShiftUITests/Pods-TimeShiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC71D92608F63A83DB67B8D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDD509EF8F6D9B914FC1C8F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB7A314FDE9B34FE19D431B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeShift/Pods-TimeShift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40B3C5BE1EAB901800B7BB36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B3C61B1EACB97F00B7BB36 /* LoadingIndicator.swift in Sources */,
+				409308031EEF1A0A0013F5B5 /* TimeTablePagingViewController.swift in Sources */,
+				409307D71EED58870013F5B5 /* TimeTableConstants.swift in Sources */,
+				40B5E4A11EFC60580048A8EA /* Thursday.m in Sources */,
+				40B5E4A21EFC60580048A8EA /* Tuesday.m in Sources */,
 				4093077D1EE70EC50013F5B5 /* UserErrorViewModel.swift in Sources */,
+				40B5E4751EFB1F000048A8EA /* TimeTablePagingDelegate.swift in Sources */,
 				40B3C60C1EAB993D00B7BB36 /*  PersistencyManager.swift in Sources */,
-				40B3C6061EAB90CD00B7BB36 /* Usser.swift in Sources */,
 				40B3C6121EACA31D00B7BB36 /* LoginViewControllerIBOutlets.swift in Sources */,
+				40B5E49E1EFC60580048A8EA /* Friday.m in Sources */,
+				40B5E4A71EFC70CE0048A8EA /* DateHelper.swift in Sources */,
+				40B5E4EE1F0549350048A8EA /* RootViewController.swift in Sources */,
 				40B3C6021EAB90AE00B7BB36 /* LoginViewController.swift in Sources */,
+				40B5E47F1EFC4D470048A8EA /* PeriodViewModel.swift in Sources */,
 				40B3C5FF1EAB90A200B7BB36 /* IBButton.swift in Sources */,
 				40B3C6001EAB90A200B7BB36 /* IBTextField.swift in Sources */,
-				40B3C60E1EAB9B1D00B7BB36 /* HTTPClient.swift in Sources */,
+				40B5E4F01F0585490048A8EA /* BaseNavigationViewController.swift in Sources */,
+				40B5E49F1EFC60580048A8EA /* Monday.m in Sources */,
+				409307A51EEC54800013F5B5 /* LearnerViewModel.swift in Sources */,
+				409307AB1EEC7C300013F5B5 /* LearnerCredentials.m in Sources */,
+				40B5E47D1EFC39510048A8EA /* PeriodCell.swift in Sources */,
+				409307AA1EEC7C300013F5B5 /* CredentialsBase.m in Sources */,
+				40B5E45A1EFADEBC0048A8EA /* LoadingIndicator.swift in Sources */,
 				409307821EE712910013F5B5 /* LibraryAPIDelegate.swift in Sources */,
+				40B5E49D1EFC60580048A8EA /* Classes.m in Sources */,
 				4093077F1EE70F300013F5B5 /* UserError.swift in Sources */,
+				409307B71EED42CC0013F5B5 /* TimeTableViewController.swift in Sources */,
+				40B5E4A01EFC60580048A8EA /* PeriodBase.m in Sources */,
+				40B5E4F21F0585960048A8EA /* SlidingMenuProtocol.swift in Sources */,
 				40B3C5C61EAB901800B7BB36 /* AppDelegate.swift in Sources */,
+				409307A31EEC42780013F5B5 /* Learner.m in Sources */,
+				409307A21EEC42780013F5B5 /* LearnerBase.m in Sources */,
+				40B5E4A31EFC60580048A8EA /* Wednesday.m in Sources */,
 				40B3C6161EACAAA600B7BB36 /* LoginConstants.swift in Sources */,
-				40B3C6041EAB90C600B7BB36 /* UsserViewModel.swift in Sources */,
+				409307B11EED2E5E0013F5B5 /* TimeTablePagingContainerViewController.swift in Sources */,
+				40B5E4731EFB0E110048A8EA /* HTTPClient.swift in Sources */,
+				409307D51EED544D0013F5B5 /* TimeTableViewModel.swift in Sources */,
 				40B3C60A1EAB98B200B7BB36 /* LibraryAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +910,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -527,6 +962,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -551,32 +987,47 @@
 		};
 		40B3C5EB1EAB901800B7BB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7926EE22C98486369DDF119 /* Pods-TimeShift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6WPV7PB3X4;
 				INFOPLIST_FILE = TimeShift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.bitwaregon.TimeShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeShift/TimeShift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		40B3C5EC1EAB901800B7BB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94B48F39A31B50AC4ED9DBA /* Pods-TimeShift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6WPV7PB3X4;
 				INFOPLIST_FILE = TimeShift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.bitwaregon.TimeShift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeShift/TimeShift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		40B3C5EE1EAB901800B7BB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40277106F1B04C5A6F50F52B /* Pods-TimeShiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +1043,7 @@
 		};
 		40B3C5EF1EAB901800B7BB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092F8459C49499EA1C96C4A8 /* Pods-TimeShiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +1059,7 @@
 		};
 		40B3C5F11EAB901800B7BB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BC648AE1B30B390427C934 /* Pods-TimeShiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6WPV7PB3X4;
@@ -621,6 +1074,7 @@
 		};
 		40B3C5F21EAB901800B7BB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8064D85C2DA079B35D94F431 /* Pods-TimeShiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6WPV7PB3X4;

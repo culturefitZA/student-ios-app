@@ -7,50 +7,45 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class HTTPClient : NSObject{
-
-    var url : String = "http://softwaregon-candella.rhcloud.com/rest/"
-    var request : NSMutableURLRequest = NSMutableURLRequest()
-    private var persistencyManager = PersistencyManager()
-    
-    func authenticateUser(method:String,params:String){
-        
-        let url = String(self.url+method+params)
-        request.httpMethod = "GET"
-        var userDictionary = [String: AnyObject]()
-        var viewModel = UsserViewModel(usser:Usser(userName:"", passWord: "", loginStatus: ""))
-			  var _userErrorViewModel = UserErrorViewModel(userError: UserError(_status: "", _errorMessage:"", _tag: ""))
-
-        DispatchQueue.main.async {
-        let task = URLSession.shared.dataTask(with: URL(string:url!)!) { data, response, error in
-           
-            guard error == nil else {
-                print(error!)
-                return
-            }
-            guard let data = data else {
-                print("Data is empty")
-                return
-            }
-            do {
-                userDictionary = try JSONSerialization.jsonObject(with: data) as! [String: AnyObject]
-                print(userDictionary)
-                
-                if (userDictionary["response"] as? String == "success") {
-                 viewModel =  UsserViewModel(usser: Usser(userName: (userDictionary["usrname"] as? String)!, passWord: (userDictionary["password"] as? String)!,loginStatus: (userDictionary["response"] as? String)!))
-                    LibraryAPI.sharedInstance.setUserViewModel(userViewModel:viewModel)
-                    
-                }else if (userDictionary["tag"] as? String == "failure"){
-                  _userErrorViewModel = UserErrorViewModel(userError: UserError(_status:"0", _errorMessage:(userDictionary["error_msg"] as? String)!, _tag: (userDictionary["tag"] as? String)!))
-									  LibraryAPI.sharedInstance.setErrorViewModel(errorViewmodel: _userErrorViewModel)
-                }
-       
-            } catch {
-                print("json error: \(error.localizedDescription)")
-            }
-        }
-        task.resume()
-        }
-    }
+	
+	var url : String = "http://softwaregon-candella.rhcloud.com/rest/"
+	var request : NSMutableURLRequest = NSMutableURLRequest()
+	private var persistencyManager = PersistencyManager()
+	
+	func getDataBaseRef(tablePath:String) -> FIRDatabaseReference{
+		var dataBaseRef:FIRDatabaseReference
+		dataBaseRef = FIRDatabase.database().reference(withPath:tablePath)
+		return dataBaseRef
+	}
+	
+	func authenticateLearner(username:String,password:String){
+		
+		var isUserAuthentic = false
+		
+		getDataBaseRef(tablePath:"credentials").observe(.value, with: { snapshot in
+			let credentialsBase = CredentialsBase.init(dictionary: snapshot.value as! Dictionary)
+			
+			for credential in (credentialsBase?.learnerCredentials)! {
+				let leanerCredentials =  credential as? LearnerCredentials
+				
+				if (leanerCredentials?.email == username && leanerCredentials?.password == password){
+					isUserAuthentic = true
+				}
+			}
+			LibraryAPI.sharedInstance.getAuthToken(isAuthentic:isUserAuthentic)
+		})
+	}
+	
+	func getTimeTable(){
+		
+		getDataBaseRef(tablePath:"timetable").observe(.value, with: { snapshot in
+			let timeTableBase = PeriodBase.init(dictionary: snapshot.value as? [AnyHashable : Any])
+			LibraryAPI.sharedInstance.setTimeTableViewModel(viewModel:TimeTableViewModel(_timeTableClass:timeTableBase!))
+		})
+	}
 }
